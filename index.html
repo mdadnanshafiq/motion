@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>motion</title>
+    <link rel="shortcut icon" href="images/fav.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        .ubuntu {
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        .btn,
+        .btn:hover,
+        .btn:active {
+            width: 200px;
+            background-color: #00008b;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="ubuntu p-8">
+    <header>
+        <div class="flex flex-col lg:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-[#00008b] text-4xl"><span><i class="fa-solid fa-circle-play"></i></span> motion
+                </h1>
+            </div>
+            <div>
+                <button id="sortBtn" class="btn">Sort By View</button>
+            </div>
+            <div>
+                <button class="btn">Blog</button>
+            </div>
+        </div>
+        <hr class="my-8">
+        <div id="btnContainer" class="flex justify-center gap-8 flex-col lg:flex-row items-center">
+
+        </div>
+    </header>
+    <main class="flex justify-center items-center mx-auto w-full">
+        <div id="empty" class="hidden mt-28 ">
+            <img src="images/Icon.png" class="size-[300px]" alt="">
+        </div>
+        <div id="videoBox" class="flex flex-wrap gap-6 justify-center items-center mt-8">
+
+            <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="" />
+                </figure>
+                <div class="card-body flex flex-row justify-between w-full items-start">
+                    <div class="size-[80px]">
+                        <img src="images/Ellipse 1.png" class="w-full" alt="">
+                    </div>
+                    <div>
+                        <h2 class=" font-bold">Building a Winning UX Strategy Using the Kano Model
+                        </h2>
+                        <p class="text-gray-600">Awlad Hossain <span><i
+                                    class="fa-solid text-blue-400 fa-circle-check"></i></span></p>
+                        <p class="text-gray-600">91K views</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+    <!--  -->
+    <script src="script.js"></script>
+</body>
+
+</html>
